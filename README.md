@@ -145,7 +145,7 @@ npm run sass:prod   # build de producció minimitzat
 ---
 
 ## 🗓️ Terminis i directrius
-- **Data límit**: (indica la data aquí).
+- **Data límit**: 19/12/2025 - 23:55
 - **Entrega**: push al repositori de Classroom abans de l’hora límit.
 - **Normes**: segueix guia d’estil (BEM o similar) i evita CSS innecessari.
 
