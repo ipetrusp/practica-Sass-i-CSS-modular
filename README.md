@@ -5,7 +5,7 @@ Benvingut/da a l’activitat de **Sass** dins de GitHub Classroom. En aquesta pr
 
 ---
 
-## 🎯 Objectius d’aprenentatge
+## Objectius d’aprenentatge
 - Entendre què és Sass i la sintaxi **SCSS**.
 - Estructurar estils de manera **modular** amb **partials** (`_*.scss`).
 - Reutilitzar codi amb **variables**, **mixins** i **funcions**.
@@ -15,7 +15,7 @@ Benvingut/da a l’activitat de **Sass** dins de GitHub Classroom. En aquesta pr
 
 ---
 
-## 📁 Estructura del projecte
+## Estructura del projecte
 Recomanació d’estructura de carpetes:
 
 ```
@@ -44,7 +44,7 @@ Recomanació d’estructura de carpetes:
 
 ---
 
-## ✅ Requisits previs
+## Requisits previs
 - Coneixements bàsics de **HTML** i **CSS**.
 - Node.js instal·lat (opcional si utilitzes `npm scripts`).
 - Sass instal·lat (via `npm` o binari):
@@ -59,7 +59,7 @@ npm install --save-dev sass
 
 ---
 
-## ⚙️ Configuració i compilació
+## Configuració i compilació
 ### Opció A: CLI directa
 ```bash
 sass src/scss/main.scss dist/css/main.css --style=expanded --source-map
@@ -86,7 +86,7 @@ npm run sass:prod   # build de producció minimitzat
 
 ---
 
-## 🧩 Tasques de l’activitat
+## Tasques de l’activitat
 1. **Estructura SCSS modular**
    - Crea els partials descrits a l’estructura i importa’ls des de `main.scss`.
    - Mantén una separació clara entre **base**, **layout**, **components** i **utilities**.
@@ -124,7 +124,7 @@ npm run sass:prod   # build de producció minimitzat
 
 ---
 
-## 📌 Lliurables
+## Lliurables
 - Codi al repositori amb l’estructura indicada.
 - `dist/css/main.css` i `dist/css/main.min.css` generats.
 - `index.html` demostrant l’ús dels components.
@@ -135,7 +135,7 @@ npm run sass:prod   # build de producció minimitzat
 
 ---
 
-## 🧪 Criteris d’avaluació (rubric)
+## Criteris d’avaluació (rúbrica)
 - **Estructura i modularitat (30%)**: ús correcte de partials i imports.
 - **Reutilització (25%)**: variables, mixins, funcions i placeholders.
 - **Qualitat CSS (20%)**: claredat, consistència, nomenclatura (p. ex. BEM), nesting moderat.
@@ -144,14 +144,14 @@ npm run sass:prod   # build de producció minimitzat
 
 ---
 
-## 🗓️ Terminis i directrius
+## Terminis i instruccions d'entrega
 - **Data límit**: 19/12/2025 - 23:55
 - **Entrega**: push al repositori de Classroom abans de l’hora límit.
 - **Normes**: segueix guia d’estil (BEM o similar) i evita CSS innecessari.
 
 ---
 
-## 🔍 Bones pràctiques i consells
+## Bones pràctiques i consells
 - Evita **nesting profund** (>3 nivells).
 - Prefereix **mixins** per a patrons repetits; usa `@extend` amb **placeholders** per evitar CSS inflat.
 - Centralitza **breakpoints** i espaiats en variables.
@@ -159,7 +159,7 @@ npm run sass:prod   # build de producció minimitzat
 
 ---
 
-## 🧠 Exemple ràpid (SCSS)
+## Exemple ràpid (SCSS)
 ```scss
 // _mixins.scss
 @mixin mq($width) {
@@ -198,14 +198,14 @@ npm run sass:prod   # build de producció minimitzat
 
 ---
 
-## 🧭 Recursos (opcionals)
+## Recursos (opcionals)
 - Documentació oficial de Sass.
 - Guies d’estil CSS (BEM, ITCSS, SMACSS).
 - Accessibilitat web (WAI-ARIA, WCAG) per a utilitats i focus.
 
 ---
 
-## 💬 Suport
+## Suport
 Si tens dubtes, obre un **Issue** al repositori amb una descripció clara del problema i captures/reproduccions.
 
-Bona pràctica! 🧑‍💻✨
+Bona pràctica!
