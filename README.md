@@ -2,6 +2,7 @@
 
 Welcome to the **Sass** activity in GitHub Classroom. In this practice, you will work with CSS preprocessors (Sass/SCSS) to organize and modularize styles, leveraging **variables**, **mixins**, **functions**, **partials**, and **imports**.
 
+You can check the SASS documentation at https://ipetrusp.github.io/practica-Sass-i-CSS-modular/
 ---
 
 ## Learning Objectives

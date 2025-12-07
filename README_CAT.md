@@ -2,6 +2,8 @@
 
 Benvingut/da a l'activitat de **Sass** dins de GitHub Classroom. En aquesta pràctica treballaràs amb precompiladors CSS (Sass/SCSS) per organitzar i modularitzar estils, aprofitant **variables**, **mixins**, **funcions**, **partials** i **imports**.
 
+Pots consultar la documentació de SASS a https://ipetrusp.github.io/practica-Sass-i-CSS-modular/
+
 ---
 
 ## Objectius d'aprenentatge
