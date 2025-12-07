@@ -1,0 +1,39 @@
+# Node.js / npm
+node_modules/
+package-lock.json
+npm-debug.log
+*.log
+
+# Sass compilation outputs
+dist/
+*.css.map
+*.min.css
+
+# Build artifacts
+build/
+out/
+
+# mdBook
+docs/book/
+
+# OS files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Environment
+.env
+.env.local
+
+# GitHub Actions (artefactes i logs, però NO les workflows!)
+# .github/workflows/ és necessari per les actions
+.github/workflows/artifacts/
+.github/workflows/logs/

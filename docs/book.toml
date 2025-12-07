@@ -1,0 +1,17 @@
+
+[book]
+title = "Sass i CSS modular"
+authors = ["Alumne/a o Equip"]
+language = "ca"
+src = "src"
+
+[output.html]
+default-theme = "ayu"
+preferred-dark-theme = "ayu"
+no-section-label = false
+site-url = ""
+# Si publiques amb GitHub Pages, pots establir el base-url (p. ex. "/nom-repo/")
+# base-url = "/nom-repo/"
+
+[build]
+create-missing = true
