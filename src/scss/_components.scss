@@ -1,0 +1,19 @@
+@use 'variables' as *;
+
+%btn-base {
+  font-weight: 600;
+  line-height: 1;
+}
+
+.btn {
+  @extend %btn-base;
+  padding: $spacing-4 $spacing-4 * 1.5;
+  border-radius: .5rem;
+  border: 0;
+}
+
+.card {
+  padding: $spacing-4;
+  border-radius: .75rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,.04);
+}

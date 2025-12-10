@@ -1,0 +1,17 @@
+{
+  "name": "practica-sass-css-modular",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "sass": "sass src/scss/main.scss dist/css/main.css --style=expanded --source-map",
+    "sass:watch": "sass --watch src/scss/main.scss:dist/css/main.css --style=expanded --source-map",
+    "sass:prod": "sass src/scss/main.scss dist/css/main.min.css --style=compressed --no-source-map",
+    "build": "npm run sass && npm run sass:prod",
+    "mdbook": "mdbook build --dest-dir docs/book",
+    "mdbook:serve": "mdbook serve -p 3000"
+  },
+  "devDependencies": {
+    "bootstrap": "^5.3.8",
+    "sass": "^1.95.1"
+  }
+}

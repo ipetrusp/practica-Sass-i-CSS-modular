@@ -1,0 +1,8 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+@use 'components' as *;
+
+body {
+  font-family: $body-font-family;
+  color: $color-primary;
+}

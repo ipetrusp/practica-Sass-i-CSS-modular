@@ -65,34 +65,24 @@ npm install --save-dev sass
 
 ## Configuració i compilació
 
-### Opció A: CLI directa
+### Inici ràpid: Només Sass (recomanat)
 
 ```bash
-sass src/scss/main.scss dist/css/main.css --style=expanded --source-map
-sass src/scss/main.scss dist/css/main.min.css --style=compressed --no-source-map
+npm install
+npm run sass        # compila a dist/css/main.css (expanded + source map)
+npm run sass:watch  # vigila canvis i recompila
+npm run sass:prod   # compilació minificada per producció
 ```
 
-### Opció B: `npm scripts`
-
-Afegiu al `package.json`:
-
-```json
-{
-  "scripts": {
-    "sass": "sass src/scss/main.scss dist/css/main.css --style=expanded --source-map",
-    "sass:watch": "sass --watch src/scss/main.scss:dist/css/main.css --style=expanded",
-    "sass:prod": "sass src/scss/main.scss dist/css/main.min.css --style=compressed --no-source-map"
-  }
-}
-```
-
-Execució:
+### Build complet
 
 ```bash
-npm run sass        # build de desenvolupament
-npm run sass:watch  # recompila en canvis
-npm run sass:prod   # build de producció minimitzat
+npm run build       # executa sass i sass:prod
 ```
+
+Això genera:
+- `dist/css/main.css` (expanded, amb source map per debugejar)
+- `dist/css/main.min.css` (minificat per producció)
 
 ---
 
@@ -173,6 +163,7 @@ Si vols crear documentació interactiva sobre l'arquitectura Sass, components i 
 2. **Estructura mdBook ja preparada**:
    - La carpeta `docs/` conté `book.toml` i `src/` amb fitxers Markdown.
    - Modifica `src/SUMMARY.md` per organitzar capítols (p. ex. arquitectura, components, guia de build).
+   - **Nota**: `docs/src/sass-tailwind.md` és una guia avançada (opcional) per integrar Tailwind amb PostCSS.
 
 3. **Prévisualitza localment**:
 

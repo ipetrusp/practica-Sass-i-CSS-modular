@@ -64,34 +64,24 @@ npm install --save-dev sass
 
 ## Configuration and Compilation
 
-### Option A: Direct CLI
+### Quick Start: Sass Only (Recommended)
 
 ```bash
-sass src/scss/main.scss dist/css/main.css --style=expanded --source-map
-sass src/scss/main.scss dist/css/main.min.css --style=compressed --no-source-map
+npm install
+npm run sass        # compile to dist/css/main.css (expanded + source map)
+npm run sass:watch  # watch for changes and recompile
+npm run sass:prod   # minified production build
 ```
 
-### Option B: `npm scripts`
-
-Add to `package.json`:
-
-```json
-{
-  "scripts": {
-    "sass": "sass src/scss/main.scss dist/css/main.css --style=expanded --source-map",
-    "sass:watch": "sass --watch src/scss/main.scss:dist/css/main.css --style=expanded",
-    "sass:prod": "sass src/scss/main.scss dist/css/main.min.css --style=compressed --no-source-map"
-  }
-}
-```
-
-Run:
+### Full Build
 
 ```bash
-npm run sass        # development build
-npm run sass:watch  # recompile on changes
-npm run sass:prod   # production build minified
+npm run build       # runs both sass and sass:prod in parallel
 ```
+
+This generates:
+- `dist/css/main.css` (expanded, with source map for debugging)
+- `dist/css/main.min.css` (minified for production)
 
 ---
 
@@ -172,6 +162,7 @@ If you want to create interactive documentation about Sass architecture, compone
 2. **Prepared mdBook structure**:
    - The `docs/` folder contains `book.toml` and `src/` with Markdown files.
    - Modify `src/SUMMARY.md` to organize chapters (e.g., architecture, components, build guide).
+   - **Note**: `docs/src/sass-tailwind.md` is an advanced guide (optional) to integrate Tailwind with PostCSS.
 
 3. **Preview locally**:
 
